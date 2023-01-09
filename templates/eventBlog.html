@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pheme - The IIT Jodhpur Newsletter</title>
+    <link rel="icon" href="static/img/lg.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="static/css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="static/css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="static/css/flaticon.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="static/css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <style>
+    .nav-link:hover {
+  text-decoration: underline;
+    }
+    .column {
+        float: left;
+        width: 33.33%;
+        margin-bottom: 10%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+        }
+        .card-body{
+            padding: 25px 10px 29px 10px;
+            background-color: #fff;
+            position: absolute;
+            left: 20px;
+            bottom: -140px;
+            box-shadow: -7.552px 9.326px 20px 0px rgba(1, 84, 85, 0.1);
+            border-radius: 10px;
+            width: 500px;
+        }
+        .btn{
+            background-color:transparent;
+            border-color:transparent;
+            right:50%;
+        }
+    </style>
+</head>
+
+<body>
+    {% extends 'navbar.html' %}
+    {% block content %}
+    <!--::breadcrumb part start::-->
+
+    <!--::breadcrumb part start::-->
+    
+    <section class="about_part single_padding_top">
+        <div class="container">
+            <div class="row align-items-center justify-content-end">
+                <div class="col-md-6 col-lg-6 col-xl-5">
+                    <div class="about_img picture">
+                        <img src="media/{{object.eventImg}}" alt="extra pic">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 offset-xl-1 col-xl-6">
+                    <div class="about_text">
+                        <h2>{{object.eventName}}</h2>
+                        <p>{{object.eventDesc}}</p>
+                        <!--<a href="#" class="btn_2">Check</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        
+        {% comment %} <div class="column col-sm-6 col-lg-4 col-xl-4">
+            <div class="single-home-blog">
+                <div class="card">
+                <img src="media/{{object.entry1img}}" class="card-img-top" width="400" height="250" alt="blog" />
+    
+                    <div class="card-body">
+                        <p style="text-align:center;"> <a href={{object.entry1href}}>{{object.entry1name}}</a></p>
+                        <br>
+                            <input type="hidden" value="{{object.blogSlug}}" id="blogSlugId" name="blogSlugId">
+                         <button class="btn" type="submit" href="/blogDetail"><a href="/blogDetail">
+                                 <h5 class="card-title" style="text-align:center;"><a href={{object.entry1href}}>Visit</a></h5> 
+                                </a>
+                            </button>
+                    </div>
+    
+                </div>
+             </div>
+        </div>
+        <div class="column col-sm-6 col-lg-4 col-xl-4">
+            <div class="single-home-blog">
+                <div class="card">
+                <img src="media/acads/book.jpg" class="card-img-top" width="400" height="250" alt="blog" />
+               
+    
+                    <div class="card-body">
+                        <p style="text-align:center;"> Happy</p>
+                        <br>
+                            <input type="hidden" value="{{blog.blogSlug}}" id="blogSlugId" name="blogSlugId">
+                            <button class="btn" type="submit" href="/blogDetail"><a href="/blogDetail">
+                                <h5 class="card-title" style="text-align:center;">okayyss this is what comes when it is written so</h5>
+                                </a>
+                            </button>
+                    </div>
+              
+    
+                </div>
+            </div>
+        </div>
+        <div class="column col-sm-6 col-lg-4 col-xl-4">
+            <div class="single-home-blog">
+                <div class="card">
+                <img src="media/acads/book.jpg" class="card-img-top" width="400" height="250" alt="blog" />
+              
+    
+                    <div class="card-body">
+                        <p style="text-align:center;"> Happy</p>
+                        <br>
+                            <input type="hidden" value="{{blog.blogSlug}}" id="blogSlugId" name="blogSlugId">
+                            <button class="btn" type="submit" href="/blogDetail"><a href="/blogDetail">
+                                <h5 class="card-title" style="text-align:center;">okayyss this is what comes when it is written so</h5>
+                                </a>
+                            </button>
+                    </div>
+             
+    
+                </div>
+            </div>
+        </div> {% endcomment %}
+
+        <div class="hero-app-7 custom-animation"><img src="static/img/animate_icon/icon_1.png" alt=""></div>
+        <div class="hero-app-8 custom-animation2"><img src="static/img/animate_icon/icon_2.png" alt=""></div>
+        <div class="hero-app-6 custom-animation3"><img src="static/img/animate_icon/icon_3.png" alt=""></div>
+
+
+
+       
+    
+    </section>
+    <section class="blog_part section_padding">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-6">
+              <div class="section_tittle text-center">
+               
+              </div>
+            </div>
+          </div>
+          <div class="row">
+           
+            <div class="column col-sm-6 col-lg-4 col-xl-4">
+                <div class="single-home-blog">
+                    <div class="card">
+                    <img src="media/{{object.entry1img}}" class="card-img-top" width="400" height="250" alt="blog" />
+        
+                        <div class="card-body">
+                            <p style="text-align:center; font-size:25px;"> <B>Entry by {{object.entry1name}}</B></p>
+                            <p style="text-align:center; font-size:25px;"> <a href={{object.entry1href}}  target="_blank"><I><B>Read more...</B></I></a></p>
+                            <br>
+                                <input type="hidden" value="{{object.blogSlug}}" id="blogSlugId" name="blogSlugId">
+                             {% comment %} <button class="btn" type="submit" href="/blogDetail"><a href="/blogDetail">
+                                     <h5 class="card-title" style="text-align:center;"><a href={{object.entry1href}}>Visit</a></h5> 
+                                    </a>
+                                </button> {% endcomment %}
+                        </div>
+        
+                    </div>
+                 </div>
+            </div>
+
+            <div class="column col-sm-6 col-lg-4 col-xl-4">
+                <div class="single-home-blog">
+                    <div class="card">
+                    <img src="media/{{object.entry2img}}"  class="card-img-top" width="400" height="250" alt="blog" />
+        
+                        <div class="card-body">
+                            <p style="text-align:center; font-size:25px;"> <B>Entry by {{object.entry2name}}</B></p>
+                            <p style="text-align:center; font-size:25px;"> <a href={{object.entry2href}}  target="_blank"><I><B>Read more...</B></I></a></p>
+                            <br>
+                                <input type="hidden" value="{{object.blogSlug}}" id="blogSlugId" name="blogSlugId">
+                             {% comment %} <button class="btn" type="submit" href="/blogDetail"><a href="/blogDetail">
+                                     <h5 class="card-title" style="text-align:center;"><a href={{object.entry2href}}>Visit</a></h5> 
+                                    </a>
+                                </button> {% endcomment %}
+                        </div>
+        
+                    </div>
+                 </div>
+            </div>
+
+            <div class="column col-sm-6 col-lg-4 col-xl-4">
+                <div class="single-home-blog">
+                    <div class="card">
+                    <img src="media/{{object.entry3img}}" class="card-img-top" width="400" height="250" alt="blog" />
+        
+                        <div class="card-body" >
+                            <p style="text-align:center; font-size:25px; color:black;"> <B>Entry by {{object.entry3name}}</B></p>
+                            <p style="text-align:center; font-size:25px;"> <a href={{object.entry3href}} target="_blank"><I><B>Read more...</B></I></a></p>
+
+                            <br>
+                                <input type="hidden" value="{{object.blogSlug}}" id="blogSlugId" name="blogSlugId">
+                             {% comment %} <button class="btn" type="submit" href="/blogDetail"><a href="/blogDetail">
+                                     <h5 class="card-title" style="text-align:center;"><a href={{object.entry1href}}>Visit</a></h5> 
+                                    </a>
+                                </button> {% endcomment %}
+                        </div>
+        
+                    </div>
+                 </div>
+            </div>
+            <!-- <div class="column col-sm-6 col-lg-4 col-xl-4">
+              <div class="single-home-blog">
+                <div class="card">
+                  <img src="static/img/hpvc.jpg" class="card-img-top" width="400" height="250" alt="blog" />
+                  <div class="card-body">
+                    <a href="hpvc.html">Technology</a> | <span> March 30, 2019</span>
+                    <a href="hpvc.html">
+                      <h5 class="card-title">HUMAN POWERED VEHICLE CHALLENGE</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col-sm-6 col-lg-4 col-xl-4">
+              <div class="single-home-blog">
+                <div class="card">
+                  <img src="static/img/tata.jpg" class="card-img-top" width="400" height="250" alt="blog" />
+                  <div class="card-body">
+                    <a href="tata.html">Technology</a> | <span> March 30, 2019</span>
+                    <a href="tata.html">
+                      <h5 class="card-title">TATA CRUCIBLE HACKATHON</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+   
+    {% endblock content %}
+
+</body>
+
+</html>
