@@ -26,8 +26,12 @@ class Leader(models.Model):
     leaderDesc=models.CharField(max_length=1000)
 
 class contactPage(models.Model):
-    contactHeader = models.CharField(max_length=100)
-    contactParagraph = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
+    email = models.EmailField(default=None)
+    message=models.TextField(default=None)
+
+    def __str__(self):
+        return self.name
 
 class contactDetails(models.Model):
     contactName = models.CharField(max_length=100)

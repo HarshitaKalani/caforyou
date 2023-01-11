@@ -37,16 +37,26 @@ def about(request):
 
 
 def contact(request):
-    contactMessage = contactPage.objects.all()[0]
-    contactHeader = contactMessage.contactHeader
-    contactParagraph = contactMessage.contactParagraph
-    contactdetails=contactDetails.objects.all()
-    context={
-        "contactHeader" : contactHeader,
-        "contactParagraph" : contactParagraph,
-        "contactdetails":contactdetails
-    }
-    return render (request, "contact.html",context)
+    if request.method == "POST":
+        contact = contactPage()
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+
+        contact.name = name
+        contact.email = email
+        contact.message = message
+        contact.save()
+    # contactMessage = contactPage.objects.all()[0]
+    # contactHeader = contactMessage.contactHeader
+    # contactParagraph = contactMessage.contactParagraph
+    # contactdetails=contactDetails.objects.all()
+    # context={
+    #     "contactHeader" : contactHeader,
+    #     "contactParagraph" : contactParagraph,
+    #     "contactdetails":contactdetails
+    # }
+    return render (request, "contact.html")
 
 def Acads(request):
     acads=Academic.objects.all()[0]
