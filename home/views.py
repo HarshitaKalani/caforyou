@@ -58,7 +58,7 @@ def contact(request):
     # }
     return render (request, "contact.html")
 
-def Acads(request):
+def itr(request):
     acads=Academic.objects.all()[0]
     acadsHead=acads.acadsHead
     acadsDesc=acads.acadsDesc
@@ -71,15 +71,15 @@ def Acads(request):
         "acadsImg":acadsImg
 
     }
-    return render(request, "Acads.html", context)
+    return render(request, "itr.html", context)
 
-def Extra(request):
+def gst_tax_return(request):
     extras = Extras.objects.all()
 
     context={
         "extras": extras
     }
-    return render(request, "Extra.html", context)
+    return render(request, "gst_tax_return.html", context)
 
 def project(request):
     return render(request, "project_details.html")
